@@ -22,18 +22,17 @@ const tmClient = await Tendermint34Client.connect(OSMO_A_1);
 const QueryClientImpl = osmosis.gamm.v1beta1.QueryClientImpl;
 const queryClient = new QueryClient(tmClient);
 const rpc = createProtobufRpcClient(queryClient);
-const queryService = new QueryClientImpl(rpc);
-const stakingQueryClientImpl = cosmos.staking.v1beta1.QueryClientImpl;
-const stakingQueryClient = new stakingQueryClientImpl(rpc);
-const authQueryClientImpl = cosmos.auth.v1beta1.QueryClientImpl;
-const authQueryClient = new authQueryClientImpl(rpc);
+// const queryService = new QueryClientImpl(rpc);
+// const stakingQueryClientImpl = cosmos.staking.v1beta1.QueryClientImpl;
+// const stakingQueryClient = new stakingQueryClientImpl(rpc);
+// const authQueryClientImpl = cosmos.auth.v1beta1.QueryClientImpl;
+// const authQueryClient = new authQueryClientImpl(rpc);
 const txQueryClientImpl = cosmos.tx.v1beta1.ServiceClientImpl;
 const txQueryClient = new txQueryClientImpl(rpc);
 console.log("txQueryClient", txQueryClient);
 
 // message.sender='osmo1clpqr4nrk4khgkxj78fcwwh6dl3uw4epasmvnj'
 // message.action='vote'
-
 // const txs = await txQueryClient.getTxsEvent({
 //   events: [
 //     "message.sender='osmovaloper1clpqr4nrk4khgkxj78fcwwh6dl3uw4ep88n0y4'",
@@ -42,7 +41,6 @@ console.log("txQueryClient", txQueryClient);
 //   pagination: createPagination(),
 //   orderBy: -1,
 // });
-
 // console.log("txs", txs);
 // const account = await authQueryClient.account({
 //   address: "osmo1clpqr4nrk4khgkxj78fcwwh6dl3uw4epasmvnj",
@@ -67,12 +65,12 @@ app.listen(port, () => {
   console.log(`server on port: ${port}`);
 });
 
-export const main = async () => {
-  const tmClient = await Tendermint34Client.connect(OSMO_RPC_ENDPOINT);
-  const QueryClientImpl = osmosis.gamm.v1beta1.QueryClientImpl;
-  const ServiceClientImpl = cosmos.base.tendermint.v1beta1.ServiceClientImpl;
-  const queryClient = new QueryClient(tmClient);
-  const rpc = createProtobufRpcClient(queryClient);
-  const queryService = new QueryClientImpl(rpc);
-  //   const pools = await queryService.pools({});
-};
+// export const main = async () => {
+//   const tmClient = await Tendermint34Client.connect(OSMO_RPC_ENDPOINT);
+//   const QueryClientImpl = osmosis.gamm.v1beta1.QueryClientImpl;
+//   const ServiceClientImpl = cosmos.base.tendermint.v1beta1.ServiceClientImpl;
+//   const queryClient = new QueryClient(tmClient);
+//   const rpc = createProtobufRpcClient(queryClient);
+//   const queryService = new QueryClientImpl(rpc);
+//   //   const pools = await queryService.pools({});
+// };
