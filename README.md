@@ -10,3 +10,8 @@ rpc endpoint로 tendermint binary를 해독하는 client를 연결하여 respons
   ```
   
 yarn start하면 server port: 9000에 오픈됩니다.
+
+## tips
+  
+- /txs_event/:events 
+ - example) /txs_event/message.sender='osmovaloper1clpqr4nrk4khgkxj78fcwwh6dl3uw4ep88n0y4'&message.action='edit_validator'
