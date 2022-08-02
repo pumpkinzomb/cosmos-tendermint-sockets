@@ -8,7 +8,7 @@ import {
 import { Tendermint34Client } from "@cosmjs/tendermint-rpc";
 
 import express from "express";
-import { osmo, terra } from "./router/index.js";
+import { osmo, terra, tgrade } from "./router/index.js";
 
 const app = express();
 const port = 9000;
@@ -17,6 +17,7 @@ const OSMO_RPC_ENDPOINT =
   "http://ec2-35-72-249-55.ap-northeast-1.compute.amazonaws.com:26657/";
 const TERRA_RPC_ENDPOINT = "https://terra-mainnet-rpc.allthatnode.com:26657/";
 const OSMO_A_1 = "https://osmosis-mainnet-archive.allthatnode.com:26657/";
+const TGRADE_A_1 = "https://tgrade-mainnet-archive.allthatnode.com:26657/";
 
 const tmClient = await Tendermint34Client.connect(OSMO_A_1);
 const QueryClientImpl = osmosis.gamm.v1beta1.QueryClientImpl;
@@ -50,6 +51,7 @@ console.log("txQueryClient", txQueryClient);
 
 const terraTmClient = await Tendermint34Client.connect(TERRA_RPC_ENDPOINT);
 const osmoTmClient = await Tendermint34Client.connect(OSMO_A_1);
+const tgradeTmClient = await Tendermint34Client.connect(TGRADE_A_1);
 
 app.get("/", (req, res) => {
   res.send(`
@@ -60,6 +62,7 @@ app.get("/", (req, res) => {
 
 app.use("/osmo", osmo(osmoTmClient));
 app.use("/terra", terra(terraTmClient));
+app.use("/tgrade", tgrade(tgradeTmClient));
 
 app.listen(port, () => {
   console.log(`server on port: ${port}`);
