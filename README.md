@@ -21,7 +21,7 @@ rpc endpoint로 tendermint binary를 해독하는 client를 연결하여 respons
 ```
   
 <del>yarn start하면 server port: 9000에 오픈됩니다.</del>
-yarn start하면 server port: 80에 오픈됩니다.
+yarn start하면 server port: 8080에 오픈됩니다.
 
 ## tips
   
