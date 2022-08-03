@@ -13,7 +13,7 @@ import { cosmos } from "osmojs";
 
 const router = express.Router();
 
-const tmRouter = (tmClient) => {
+const tmRouter = (prefix, tmClient) => {
   const queryClient = new QueryClient(tmClient);
   const rpc = createProtobufRpcClient(queryClient);
   const stakingQueryClientImpl = cosmos.staking.v1beta1.QueryClientImpl;
@@ -25,7 +25,7 @@ const tmRouter = (tmClient) => {
   const txQueryClientImpl = cosmos.tx.v1beta1.ServiceClientImpl;
   const txQueryClient = new txQueryClientImpl(rpc);
 
-  router.get("/", async (req, res) => {
+  router.get(`${prefix}/`, async (req, res) => {
     try {
       const status = await tmClient.status();
       return res.json(parsingJSONuint8ToHex(status));
@@ -38,7 +38,7 @@ const tmRouter = (tmClient) => {
     }
   });
 
-  router.get("/health", async (req, res) => {
+  router.get(`${prefix}/health`, async (req, res) => {
     try {
       const health = await tmClient.health();
       return res.json(parsingJSONuint8ToHex(health));
@@ -51,7 +51,7 @@ const tmRouter = (tmClient) => {
     }
   });
 
-  router.get("/bank/balances/:address", async (req, res) => {
+  router.get(`${prefix}/bank/balances/:address`, async (req, res) => {
     try {
       const address = req.params.address;
       const responseAddressBalances = await bankQueryClient.allBalances({
@@ -68,7 +68,7 @@ const tmRouter = (tmClient) => {
     }
   });
 
-  router.get(`/blocks`, async (req, res) => {
+  router.get(`${prefix}/blocks`, async (req, res) => {
     try {
       const latestBlock = await tmClient.block();
       return res.json(parsingJSONuint8ToHex(latestBlock));
@@ -81,7 +81,7 @@ const tmRouter = (tmClient) => {
     }
   });
 
-  router.get(`/blocks/:height`, async (req, res) => {
+  router.get(`${prefix}/blocks/:height`, async (req, res) => {
     try {
       const height = req.params.height && Number(req.params.height);
       const responseBlock = await tmClient.block(height);
@@ -95,7 +95,7 @@ const tmRouter = (tmClient) => {
     }
   });
 
-  router.get(`/accounts/:address`, async (req, res) => {
+  router.get(`${prefix}/accounts/:address`, async (req, res) => {
     try {
       const address = req.params.address;
       const responseAddress = await authQueryClient.account({
@@ -111,7 +111,7 @@ const tmRouter = (tmClient) => {
     }
   });
 
-  router.get(`/staking/validators`, async (req, res) => {
+  router.get(`${prefix}/staking/validators`, async (req, res) => {
     try {
       const responseValidator = await stakingQueryClient.validators({
         status: "",
@@ -127,7 +127,7 @@ const tmRouter = (tmClient) => {
     }
   });
 
-  router.get(`/staking/validators/:address`, async (req, res) => {
+  router.get(`${prefix}/staking/validators/:address`, async (req, res) => {
     try {
       const validatorAddr = req.params.address;
 
@@ -144,7 +144,7 @@ const tmRouter = (tmClient) => {
     }
   });
 
-  router.get(`/txs/:hash`, async (req, res) => {
+  router.get(`${prefix}/txs/:hash`, async (req, res) => {
     const hash = req.params.hash && fromHexString(req.params.hash);
     try {
       const responseTx = await tmClient.tx({
@@ -160,7 +160,7 @@ const tmRouter = (tmClient) => {
     }
   });
 
-  router.get(`/txs_event/:events`, async (req, res) => {
+  router.get(`${prefix}/txs_event/:events`, async (req, res) => {
     const events = req.params.events.split("&");
     try {
       const responseEvents = await txQueryClient.getTxsEvent({
@@ -178,7 +178,7 @@ const tmRouter = (tmClient) => {
     }
   });
 
-  router.get(`/validators/:height/:page`, async (req, res) => {
+  router.get(`${prefix}/validators/:height/:page`, async (req, res) => {
     try {
       const height = req.params.height && Number(req.params.height);
       const page = req.params.page && Number(req.params.page);
