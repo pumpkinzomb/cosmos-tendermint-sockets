@@ -7,7 +7,8 @@ import {
   fromHex,
   toHex,
 } from "@cosmjs/encoding/build/index.js";
-import { cosmos } from "osmojs";
+import { cosmos, osmosis, ibc } from "osmojs";
+import * as osmojs from "osmojs";
 
 export const fromHexString = fromHex;
 export const toHexString = toHex;
@@ -30,6 +31,55 @@ function txData(data) {
     );
   }
 }
+
+function decodeMsgs(data) {
+  try {
+    const decoding = data.map((item) => {
+      const findDecoder = get(osmojs, item.typeUrl.slice(1));
+      // console.log("findDecoder", item.typeUrl.slice(1), findDecoder);
+      if (typeof findDecoder === "object") {
+        item.value = findDecoder.decode(item.value);
+      }
+      return item;
+    });
+    if (Object.prototype.toString.call(decoding).includes("Uint8Array")) {
+      return decoding;
+    } else {
+      return parsingJSONuint8ToHex(decoding);
+    }
+  } catch (error) {
+    return parsingJSONuint8ToHex(data);
+  }
+  // return data.map((item) => {
+  //   switch (item.typeUrl) {
+  //     case "/osmosis.gamm.v1beta1.MsgSwapExactAmountIn":
+  //       item.value = osmosis.gamm.v1beta1.MsgSwapExactAmountIn.decode(
+  //         item.value
+  //       );
+  //       break;
+  //     case "/osmosis.gamm.v1beta1.MsgSwapExactAmountOut":
+  //       item.value = osmosis.gamm.v1beta1.MsgSwapExactAmountOut.decode(
+  //         item.value
+  //       );
+  //       break;
+  //     case "/ibc.core.client.v1.MsgUpdateClient":
+  //       item.value = ibc.core.client.v1.MsgUpdateClient.decode(item.value);
+  //       break;
+  //     case "/ibc.core.channel.v1.MsgRecvPacket":
+  //       item.value = ibc.core.channel.v1.MsgRecvPacket.decode(item.value);
+  //       break;
+  //     case "/cosmos.distribution.v1beta1.MsgWithdrawDelegatorReward":
+  //       item.value =
+  //         cosmos.distribution.v1beta1.MsgWithdrawDelegatorReward.decode(
+  //           item.value
+  //         );
+  //       break;
+  //   }
+  //   return item;
+  // });
+}
+
+const get = (t, path) => path.split(".").reduce((r, k) => r?.[k], t);
 
 function txRawData(data) {
   const decodeTx = cosmos.tx.v1beta1.TxRaw.decode(data);
@@ -80,26 +130,6 @@ function accountData(data) {
   );
 }
 
-// export const buf2hex = (buffer) => {
-//   // buffer is an ArrayBuffer
-//   // ex) console.log("blockId-1", buf2hex(blocks.blockId.hash.buffer));
-//   return [...new Uint8Array(buffer)]
-//     .map((x) => x.toString(16).padStart(2, "0"))
-//     .join("");
-// };
-
-// export const fromHexString = (hexString) =>
-//   Uint8Array.from(hexString.match(/.{1,2}/g).map((byte) => parseInt(byte, 16)));
-
-// export const toHexString = (bytes) =>
-//   bytes
-//     .reduce((str, byte) => str + byte.toString(16).padStart(2, "0"), "")
-//     .toUpperCase();
-
-// export const _toAscii = (bytes) => {
-//   return bytes.reduce((str, byte) => str + String.fromCharCode(byte), "");
-// };
-
 const decodingBinary = (data) => {
   let done = 0;
   let answer;
@@ -128,23 +158,7 @@ export const parsingJSONuint8ToHex = (data) => {
         if (typeof value === "object") {
           if (Object.prototype.toString.call(value).includes("Uint8Array")) {
             // console.log("Gotcha!!!", key, value);
-            // if (key === "key" || key === "value") {
-            //   try {
-            //     item[1] = fromAscii(value);
-            //   } catch (error) {
-            //     item[1] = toHex(value);
-            //   }
-            // } else if (key === "data") {
-            //   try {
-            //     item[1] = fromUtf8(value);
-            //   } catch (error) {
-            //     item[1] = toHex(value);
-            //   }
-            // } else if (key === "tx") {
-            //   item[1] = toBase64(value);
-            // } else {
-            //   item[1] = toHex(value);
-            // }
+
             if (key === "tx") {
               item[1] = txData(value);
             } else {
@@ -159,6 +173,8 @@ export const parsingJSONuint8ToHex = (data) => {
               item[1] = txData(value);
             } else if (key === "account") {
               item[1] = accountData(value);
+            } else if (key === "messages") {
+              item[1] = decodeMsgs(value);
             } else {
               item[1] = parsingJSONuint8ToHex(value);
             }
