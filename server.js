@@ -12,7 +12,7 @@ import router from "./router/index.js";
 
 export const serverInit = async () => {
   const app = express();
-  const port = 8080;
+  const port = 9000;
 
   const TERRA = "https://terra-mainnet-rpc.allthatnode.com:26657/";
   const OSMO = "https://osmosis-mainnet-archive.allthatnode.com:26657/";
