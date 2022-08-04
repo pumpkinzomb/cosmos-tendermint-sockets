@@ -32,6 +32,33 @@ function txData(data) {
   }
 }
 
+function parsingInMsgs(data) {
+  if (typeof data === "object" && data !== null) {
+    if (
+      Object.keys(data).indexOf("typeUrl") > -1 &&
+      Object.keys(data).indexOf("value") > -1
+    ) {
+      return decodeMsgs(data);
+    } else {
+      return Object.fromEntries(
+        Object.entries(data).map((item, index) => {
+          let [key, value] = item;
+          if (typeof value === "object") {
+            if (Object.prototype.toString.call(value).includes("Uint8Array")) {
+              item[1] = decodingBinary(value);
+            } else {
+              item[1] = parsingInMsgs(value);
+            }
+          }
+          return item;
+        })
+      );
+    }
+  } else {
+    return data;
+  }
+}
+
 function decodeMsgs(data) {
   try {
     const decoding = data.map((item) => {
@@ -45,9 +72,10 @@ function decodeMsgs(data) {
     if (Object.prototype.toString.call(decoding).includes("Uint8Array")) {
       return decoding;
     } else {
-      return parsingJSONuint8ToHex(decoding);
+      return parsingInMsgs(decoding);
     }
   } catch (error) {
+    console.log("decodeMsgs error: ", error);
     return parsingJSONuint8ToHex(data);
   }
   // return data.map((item) => {
@@ -77,6 +105,25 @@ function decodeMsgs(data) {
   //   }
   //   return item;
   // });
+}
+
+function decodeMsg(data) {
+  try {
+    const findDecoder = get(osmojs, data.typeUrl.slice(1));
+    // console.log("findDecoder", item.typeUrl.slice(1), findDecoder);
+    if (typeof findDecoder === "object") {
+      data.value = findDecoder.decode(data.value);
+    }
+
+    if (Object.prototype.toString.call(data).includes("Uint8Array")) {
+      return data;
+    } else {
+      return parsingInMsgs(data);
+    }
+  } catch (error) {
+    console.log("decodeMsg error: ", error);
+    return parsingJSONuint8ToHex(data);
+  }
 }
 
 const get = (t, path) => path.split(".").reduce((r, k) => r?.[k], t);
@@ -175,6 +222,12 @@ export const parsingJSONuint8ToHex = (data) => {
               item[1] = accountData(value);
             } else if (key === "messages") {
               item[1] = decodeMsgs(value);
+            } else if (key === "header") {
+              if (typeof value === "object" && value?.typeUrl) {
+                item[1] = decodeMsg(value);
+              } else {
+                item[1] = parsingJSONuint8ToHex(value);
+              }
             } else {
               item[1] = parsingJSONuint8ToHex(value);
             }
