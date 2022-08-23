@@ -7,7 +7,7 @@ import {
   fromHex,
   toHex,
 } from "@cosmjs/encoding/build/index.js";
-import { cosmos, osmosis, ibc } from "osmojs";
+import { cosmos, osmosis, ibc, cosmwasm } from "osmojs";
 import * as osmojs from "osmojs";
 
 export const fromHexString = fromHex;
@@ -62,12 +62,21 @@ function parsingInMsgs(data) {
 function decodeMsgs(data) {
   try {
     const decoding = data.map((item) => {
-      const findDecoder = get(osmojs, item.typeUrl.slice(1));
-      // console.log("findDecoder", item.typeUrl.slice(1), findDecoder);
-      if (typeof findDecoder === "object") {
-        item.value = findDecoder.decode(item.value);
+      if (item.typeUrl.slice(1).includes("cosmwasm")) {
+        const findDecoder = get(osmojs, item.typeUrl.slice(1));
+        // console.log("findDecoder", item.typeUrl.slice(1), findDecoder);
+        if (typeof findDecoder === "object") {
+          item.value = findDecoder.decode(item.value);
+        }
+        return item;
+      } else {
+        const findDecoder = get(osmojs, item.typeUrl.slice(1));
+        // console.log("findDecoder", item.typeUrl.slice(1), findDecoder);
+        if (typeof findDecoder === "object") {
+          item.value = findDecoder.decode(item.value);
+        }
+        return item;
       }
-      return item;
     });
     if (Object.prototype.toString.call(decoding).includes("Uint8Array")) {
       return decoding;
@@ -109,10 +118,21 @@ function decodeMsgs(data) {
 
 function decodeMsg(data) {
   try {
-    const findDecoder = get(osmojs, data.typeUrl.slice(1));
-    // console.log("findDecoder", item.typeUrl.slice(1), findDecoder);
-    if (typeof findDecoder === "object") {
-      data.value = findDecoder.decode(data.value);
+    if (data.typeUrl.slice(1).includes("cosmwasm")) {
+      const findDecoder = get(
+        osmojs,
+        data.typeUrl.slice(1).replace("cosmwasm.wasm.v1", "cosmwasm.wasm.v1.tx")
+      );
+      // console.log("findDecoder", item.typeUrl.slice(1), findDecoder);
+      if (typeof findDecoder === "object") {
+        data.value = findDecoder.decode(data.value);
+      }
+    } else {
+      const findDecoder = get(osmojs, data.typeUrl.slice(1));
+      // console.log("findDecoder", item.typeUrl.slice(1), findDecoder);
+      if (typeof findDecoder === "object") {
+        data.value = findDecoder.decode(data.value);
+      }
     }
 
     if (Object.prototype.toString.call(data).includes("Uint8Array")) {
