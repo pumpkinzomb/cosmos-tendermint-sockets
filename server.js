@@ -17,7 +17,6 @@ export const serverInit = async () => {
   const TERRA = "https://terra-mainnet-rpc.allthatnode.com:26657/";
   const OSMO = "https://osmosis-mainnet-archive.allthatnode.com:26657/";
   const TGRADE = "https://tgrade-mainnet-archive.allthatnode.com:26657/";
-  const STARGAZE = "https://rpc.stargaze.ezstaking.io/";
   const TEST_OSMO = "https://testnet-rpc.osmosis.zone/";
 
   const tmClient = await Tendermint34Client.connect(OSMO);
@@ -63,14 +62,12 @@ export const serverInit = async () => {
   const terraTmClient = await Tendermint34Client.connect(TERRA);
   const osmoTmClient = await Tendermint34Client.connect(OSMO);
   const tgradeTmClient = await Tendermint34Client.connect(TGRADE);
-  const stargazeTmClient = await Tendermint34Client.connect(STARGAZE);
   const osmoTestTmClient = await Tendermint34Client.connect(TEST_OSMO);
 
   const rpcList = [
     { path: "/osmo", client: osmoTmClient, address: OSMO },
     { path: "/terra", client: terraTmClient, address: TERRA },
     { path: "/tgrade", client: tgradeTmClient, address: TGRADE },
-    { path: "/stargaze", client: stargazeTmClient, address: STARGAZE },
     { path: "/osmo_test", client: osmoTestTmClient, address: TEST_OSMO },
   ];
 

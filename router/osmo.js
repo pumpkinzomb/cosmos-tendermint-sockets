@@ -131,7 +131,7 @@ const tmRouter = (prefix, tmClient) => {
     try {
       const validatorAddr = req.params.address;
 
-      const responseValidator = await osmoQueryClient.validator({
+      const responseValidator = await stakingQueryClient.validator({
         validatorAddr,
       });
       return res.json(parsingJSONuint8ToHex(responseValidator));
@@ -169,6 +169,20 @@ const tmRouter = (prefix, tmClient) => {
         orderBy: 1,
       });
       return res.json(parsingJSONuint8ToHex(responseEvents));
+    } catch (error) {
+      // console.log(error);
+      console.error(error.name + ": " + error.message);
+      return res.status(500).json({
+        error: error.message,
+      });
+    }
+  });
+
+  router.get(`${prefix}/validators/:height`, async (req, res) => {
+    try {
+      const height = req.params.height && Number(req.params.height);
+      const responseValidators = await tmClient.validatorsAll(height);
+      return res.json(parsingJSONuint8ToHex(responseValidators));
     } catch (error) {
       // console.log(error);
       console.error(error.name + ": " + error.message);

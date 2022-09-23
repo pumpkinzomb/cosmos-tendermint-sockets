@@ -87,33 +87,6 @@ function decodeMsgs(data) {
     console.log("decodeMsgs error: ", error);
     return parsingJSONuint8ToHex(data);
   }
-  // return data.map((item) => {
-  //   switch (item.typeUrl) {
-  //     case "/osmosis.gamm.v1beta1.MsgSwapExactAmountIn":
-  //       item.value = osmosis.gamm.v1beta1.MsgSwapExactAmountIn.decode(
-  //         item.value
-  //       );
-  //       break;
-  //     case "/osmosis.gamm.v1beta1.MsgSwapExactAmountOut":
-  //       item.value = osmosis.gamm.v1beta1.MsgSwapExactAmountOut.decode(
-  //         item.value
-  //       );
-  //       break;
-  //     case "/ibc.core.client.v1.MsgUpdateClient":
-  //       item.value = ibc.core.client.v1.MsgUpdateClient.decode(item.value);
-  //       break;
-  //     case "/ibc.core.channel.v1.MsgRecvPacket":
-  //       item.value = ibc.core.channel.v1.MsgRecvPacket.decode(item.value);
-  //       break;
-  //     case "/cosmos.distribution.v1beta1.MsgWithdrawDelegatorReward":
-  //       item.value =
-  //         cosmos.distribution.v1beta1.MsgWithdrawDelegatorReward.decode(
-  //           item.value
-  //         );
-  //       break;
-  //   }
-  //   return item;
-  // });
 }
 
 function decodeMsg(data) {
@@ -148,31 +121,10 @@ function decodeMsg(data) {
 
 const get = (t, path) => path.split(".").reduce((r, k) => r?.[k], t);
 
-function txRawData(data) {
-  const decodeTx = cosmos.tx.v1beta1.TxRaw.decode(data);
-  return parsingJSONuint8ToHex(decodeTx);
-}
-
-function decodeTxBody(data) {
-  return cosmos.tx.v1beta1.TxBody.decode(data);
-}
-
-function decodingData(data) {
-  let hex = "";
-  let answer = "";
-  for (const byte of data) {
-    if (byte < 0x20 || byte > 0x7e) {
-      answer += "[" + ("0" + byte.toString(16)).slice(-2) + "]"; // to Hex
-    } else {
-      answer += String.fromCharCode(byte); // convert ascii
-    }
-    hex += ("0" + byte.toString(16)).slice(-2);
-  }
-  return {
-    hex,
-    base64: toBase64(data),
-    decodingValue: answer,
-  };
+function decodingAccountData(data, typeUrl) {
+  const findDecoder = get(osmojs, typeUrl.slice(1));
+  const decodedAccount = findDecoder.decode(data);
+  return decodedAccount;
 }
 
 function txsData(data) {
@@ -186,15 +138,20 @@ function txsData(data) {
 }
 
 function accountData(data) {
-  return Object.fromEntries(
+  let typeUrl;
+  const parsedData = Object.fromEntries(
     Object.entries(data).map((item) => {
       let [key, value] = item;
+      if (key === "typeUrl") {
+        typeUrl = value;
+      }
       if (key === "value") {
-        item[1] = decodingData(value);
+        item[1] = decodingAccountData(value, typeUrl);
       }
       return item;
     })
   );
+  return parsedData;
 }
 
 const decodingBinary = (data) => {
@@ -217,15 +174,22 @@ const decodingBinary = (data) => {
   return answer;
 };
 
+const decodingTendermint = (data, typeUrl) => {
+  const findDecoder = get(osmojs, typeUrl.slice(1));
+  const decodedAccount = findDecoder.decode(data);
+  return parsingJSONuint8ToHex(decodedAccount);
+};
+
 export const parsingJSONuint8ToHex = (data) => {
   if (typeof data === "object" && data !== null) {
     return Object.fromEntries(
       Object.entries(data).map((item) => {
         let [key, value] = item;
-        if (typeof value === "object") {
+        if (typeof value === "object" && value?.typeUrl && value?.value) {
+          item[1].value = decodingTendermint(value.value, value.typeUrl);
+        } else if (typeof value === "object") {
           if (Object.prototype.toString.call(value).includes("Uint8Array")) {
             // console.log("Gotcha!!!", key, value);
-
             if (key === "tx") {
               item[1] = txData(value);
             } else {
