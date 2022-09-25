@@ -3,9 +3,8 @@ import scrypt from "scrypt-js";
 import { sha256 as _sha256 } from "sha.js";
 import AES, { Counter } from "aes-js";
 const bech32 = require("bech32-buffer");
-const data = "osmo1g8xqpk0evzykreayg04wsjck8gex0a2dl0ag4y";
+const data = "cosmos12f5e2ulr5ml4atnutd6lujrv8cklktydqp9l9m";
 const Buffer = require("buffer/").Buffer;
-// const testAddress = "osmo1g8xqpk0evzykreayg04wsjck8gex0a2dl0ag4y";
 const decode = bech32.decode(data);
 // console.log("decode_osmo", decode);
 // console.log("encode_cosmos", bech32.encode("cosmos", decode.data));
@@ -25,7 +24,7 @@ async function encrypt(text, password) {
     p: 1,
   };
   const derivedKey = await scrpyt(password, scryptParams);
-
+  console.log("derivedKey", derivedKey);
   const buf = Buffer.from(text);
 
   random = new Uint8Array(16);
@@ -85,10 +84,19 @@ function createPrivateMnemonicKey() {
 
 async function testAccountCheck() {
   const check = await encrypt(
-    "satisfy adjust timber high purchase tuition stool faith fine install that you unaware feed domain license impose boss human eager hat rent enjoy dawn",
-    "abcd19283!23"
+    "shift rival sibling invite muffin oak speak lawn render broom device pencil",
+    "asdf1234"
   );
-  //   console.log("check", check);
+  console.log("check", check);
 }
 
 testAccountCheck();
+
+const mnemonic =
+  "shift rival sibling invite muffin oak speak lawn render broom device pencil";
+const words = mnemonic
+  .trim()
+  .split(" ")
+  .map((word) => word.trim());
+console.log("mnemonic", mnemonic);
+console.log("seed key", Buffer.from(words, "hex").length);
