@@ -14,7 +14,7 @@
     "start": "node --exec babel-node server.js",
     "server": "babel-node server.js",
     "test": "nodemon --exec babel-node test.js",
-    "test2": "nodemon --exec babel-node test2.js",
+    "explorer": "nodemon --exec babel-node test_explorer.js",
     "make_acc": "nodemon --exec babel-node makeCosmosAccounts.js"
   },
   "devDependencies": {
@@ -29,6 +29,7 @@
     "bip32": "^3.0.1",
     "bip39": "^3.0.4",
     "buffer": "^6.0.3",
+    "crypto-js": "^4.1.1",
     "expo-random": "^12.3.0",
     "moment": "^2.29.4",
     "path": "^0.12.7",

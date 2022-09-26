@@ -61,25 +61,23 @@ function parsingInMsgs(data) {
 
 function decodeMsgs(data) {
   try {
-    const decoding = data.map((item) => {
-      if (item.typeUrl.slice(1).includes("cosmwasm")) {
-        const findDecoder = get(osmojs, item.typeUrl.slice(1));
-        // console.log("findDecoder", item.typeUrl.slice(1), findDecoder);
-        if (typeof findDecoder === "object") {
-          item.value = findDecoder.decode(item.value);
+    if (Array.isArray(data)) {
+      const decoding = data.map((item) => {
+        if (item.typeUrl.slice(1).includes("cosmwasm")) {
+          const findDecoder = get(osmojs, item.typeUrl.slice(1));
+          if (typeof findDecoder === "object") {
+            item.value = findDecoder.decode(item.value);
+          }
+          return item;
+        } else {
+          const findDecoder = get(osmojs, item.typeUrl.slice(1));
+          if (typeof findDecoder === "object") {
+            item.value = findDecoder.decode(item.value);
+          }
+          return item;
         }
-        return item;
-      } else {
-        const findDecoder = get(osmojs, item.typeUrl.slice(1));
-        // console.log("findDecoder", item.typeUrl.slice(1), findDecoder);
-        if (typeof findDecoder === "object") {
-          item.value = findDecoder.decode(item.value);
-        }
-        return item;
-      }
-    });
-    if (Object.prototype.toString.call(decoding).includes("Uint8Array")) {
-      return decoding;
+      });
+      return parsingJSONuint8ToHex(decoding);
     } else {
       return parsingInMsgs(decoding);
     }
@@ -182,45 +180,57 @@ const decodingTendermint = (data, typeUrl) => {
 
 export const parsingJSONuint8ToHex = (data) => {
   if (typeof data === "object" && data !== null) {
-    return Object.fromEntries(
-      Object.entries(data).map((item) => {
-        let [key, value] = item;
-        if (typeof value === "object" && value?.typeUrl && value?.value) {
-          item[1].value = decodingTendermint(value.value, value.typeUrl);
-        } else if (typeof value === "object") {
-          if (Object.prototype.toString.call(value).includes("Uint8Array")) {
-            // console.log("Gotcha!!!", key, value);
-            if (key === "tx") {
-              item[1] = txData(value);
-            } else {
-              item[1] = decodingBinary(value);
-            }
-          } else if (
-            Object.prototype.toString.call(value) !== "[object Date]"
-          ) {
-            if (key === "txs") {
-              item[1] = txsData(value);
-            } else if (key === "tx") {
-              item[1] = txData(value);
-            } else if (key === "account") {
-              item[1] = accountData(value);
-            } else if (key === "messages") {
-              item[1] = decodeMsgs(value);
-            } else if (key === "header") {
-              if (typeof value === "object" && value?.typeUrl) {
-                item[1] = decodeMsg(value);
+    if (typeof data === "object" && !Array.isArray(data)) {
+      return Object.fromEntries(
+        Object.entries(data).map((item) => {
+          let [key, value] = item;
+          if (typeof value === "object" && value?.typeUrl && value?.value) {
+            // console.log("check 1: ", key);
+            item[1].value = decodingTendermint(value.value, value.typeUrl);
+          } else if (typeof value === "object") {
+            if (Object.prototype.toString.call(value).includes("Uint8Array")) {
+              // console.log("Gotcha!!!", key, value);
+              if (key === "tx") {
+                item[1] = txData(value);
+              } else {
+                item[1] = decodingBinary(value);
+              }
+            } else if (
+              Object.prototype.toString.call(value) !== "[object Date]"
+            ) {
+              // console.log("check 2: ", key);
+              if (key === "txs") {
+                item[1] = txsData(value);
+              } else if (key === "tx") {
+                item[1] = txData(value);
+              } else if (key === "account") {
+                item[1] = accountData(value);
+              } else if (key === "messages") {
+                item[1] = decodeMsgs(value);
+              } else if (key === "header") {
+                console.log("check", key, value);
+                if (typeof value === "object" && value?.typeUrl) {
+                  item[1] = decodeMsg(value);
+                } else {
+                  item[1] = parsingJSONuint8ToHex(value);
+                }
               } else {
                 item[1] = parsingJSONuint8ToHex(value);
               }
-            } else {
-              item[1] = parsingJSONuint8ToHex(value);
             }
           }
+          //   console.log("item", item);
+          return item;
+        })
+      );
+    } else if (typeof data === "object" && Array.isArray(data)) {
+      return data.map((item) => {
+        if (Object.prototype.toString.call(item).includes("Uint8Array")) {
+          return decodingBinary(item);
         }
-        //   console.log("item", item);
-        return item;
-      })
-    );
+        return parsingJSONuint8ToHex(item);
+      });
+    }
   } else {
     return data;
   }
