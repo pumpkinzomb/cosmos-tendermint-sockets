@@ -1,0 +1,2434 @@
+{
+    "validators": [
+        {
+            "validators": [
+                {
+                    "address": "cb5a63b91e8f4ee8db935942cbe25724636479e0",
+                    "pubKey": {
+                        "ed25519": "e8dcf4f58187cf05b18dccc6d0884ae08bf4a98d88717d0fff92a2b6f4574d47"
+                    },
+                    "votingPower": {
+                        "low": 22118184,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 67824915,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "9d0281786872d3bbe53c58fbeca118d86fa82177",
+                    "pubKey": {
+                        "ed25519": "75f4c477afa4ad6633aac05ca6a771c92abe8b087b4867309c13bc5da5b6a8a6"
+                    },
+                    "votingPower": {
+                        "low": 19348956,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -45710021,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "e08fba0fe999707d1496baab743eab27784dc1c5",
+                    "pubKey": {
+                        "ed25519": "de0e4a0ba7c9d98611a0de7cde629db2d2e2e5e830b760a4c91d32896211950c"
+                    },
+                    "votingPower": {
+                        "low": 12049924,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -53612938,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "66b69666ebf776e7ebcbe197aba466a712e27076",
+                    "pubKey": {
+                        "ed25519": "c01db94ad2f16f3983d2e4e21621fac724997741f5de4c9a9cd52fbe55296b7e"
+                    },
+                    "votingPower": {
+                        "low": 5936538,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 61293889,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "06f45c36fcb957e55d923a6d4e905c2d715115ad",
+                    "pubKey": {
+                        "ed25519": "2ce51a0d34b46194bbd078c1c2bf4045ead73176d7c453ec4b1438eee36602f0"
+                    },
+                    "votingPower": {
+                        "low": 5889537,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -16134989,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "16a169951a878247dbe258fddc71638f6606d156",
+                    "pubKey": {
+                        "ed25519": "6fbef30a1fd5b11815bdf197b96e1d07e0e18383eb3165810b91b62bfa858225"
+                    },
+                    "votingPower": {
+                        "low": 4966003,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 9846989,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "6239a498c22df3ec3fb0ca2f96d15535f6f3387a",
+                    "pubKey": {
+                        "ed25519": "fe4ed7f1810e1371ed442f751aaf6b5a1dca75d93696ce60c9e5138598eae03a"
+                    },
+                    "votingPower": {
+                        "low": 4459704,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -38744321,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "03c016ab7ec32d9f8d77afdb191fbf53ea08d917",
+                    "pubKey": {
+                        "ed25519": "39d5694df2c2bcfc812de13a8cdc5eb20cb71e0d48880fb5eb9952bac64380bb"
+                    },
+                    "votingPower": {
+                        "low": 4126273,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 38702798,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "da96564d2379acee00dd9faa558681bb499757fd",
+                    "pubKey": {
+                        "ed25519": "85970175f1508b3d02d443a410f92ac02e5fa7bf358ee0739ce72dbc5008b352"
+                    },
+                    "votingPower": {
+                        "low": 4118971,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -66721556,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "273f72ee55987afa771b27d370fa131f608b83ac",
+                    "pubKey": {
+                        "ed25519": "18f96b749e73fc46d76d429cdf121c427f8b394d54685e24ca4ec27ef7a98498"
+                    },
+                    "votingPower": {
+                        "low": 4118006,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 75352703,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "d9ec9739cccf051a05861acb8a2218a9a4756390",
+                    "pubKey": {
+                        "ed25519": "77484e5ef0cc1de1670849d66d26f7aabfeafc84fe4854a0ccf9f57faf3ac627"
+                    },
+                    "votingPower": {
+                        "low": 4115629,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 100549176,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "768a82700e3046e6daf849664579e649597cc1b4",
+                    "pubKey": {
+                        "ed25519": "36edd800b9957fb92f4576c20b1962c1c3c7983f2f99132bf50dfd95b2b8d70e"
+                    },
+                    "votingPower": {
+                        "low": 4110304,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -39193650,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "131fc79e7a012d9e7eef21de3ba5d5033fcdbc1f",
+                    "pubKey": {
+                        "ed25519": "8dde03c27dc6aea053730369b9768e9a07b580dca36bd4a6619b28e9ef310070"
+                    },
+                    "votingPower": {
+                        "low": 3913065,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 16605572,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "844290531ee59b40feefde5259857368bf7119ec",
+                    "pubKey": {
+                        "ed25519": "38fb199ef4f2dd2f74ac0f24bf615010a9858a04e7e611dd028a74a8d6603537"
+                    },
+                    "votingPower": {
+                        "low": 3737273,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -51280843,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "99063b919404b6950a79a6a31e370378fe07020d",
+                    "pubKey": {
+                        "ed25519": "4f5c29e442f3bea54ea819ba78662241059ed13682d8b576053847695c61feb9"
+                    },
+                    "votingPower": {
+                        "low": 3599038,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 109494096,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "9e7cae009efff4d163f3fb8781a07b25c2b10b32",
+                    "pubKey": {
+                        "ed25519": "9bf9fb4b564efa452d23bfb18021a7925a3989780c748f50be27f655cbc76238"
+                    },
+                    "votingPower": {
+                        "low": 3462798,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -86371831,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "71df8d9879c20563a4e2abeda95cd1fc57dbf6aa",
+                    "pubKey": {
+                        "ed25519": "0c2261f753aa87d3fbea0602ef5a454b37747319efa910f267afcf2c565f80b1"
+                    },
+                    "votingPower": {
+                        "low": 3457529,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 120465485,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "138fd9ab7abe0baed14ca7d41d885b78052a4aa1",
+                    "pubKey": {
+                        "ed25519": "9a66109b69c09eb50a2b928dcb7d45095f6504c97dfca81195ae2f06c87f2570"
+                    },
+                    "votingPower": {
+                        "low": 3423536,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -92269945,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "2022fe8cc49e48630c76160e11a880459219d244",
+                    "pubKey": {
+                        "ed25519": "9eaebea0305761228b211daf92c39e18cf62553dfe46d23258058452a70ea0ee"
+                    },
+                    "votingPower": {
+                        "low": 3388752,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -15278312,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "af195943e44fe1d6250076b8bc1910eabc85f1f2",
+                    "pubKey": {
+                        "ed25519": "8f8321eb499cf5bf3c1f8b823a998e4388d893305b5f8d71f803fe0855a6dcdb"
+                    },
+                    "votingPower": {
+                        "low": 3051639,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 9116475,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "6912e0ba38cd00c9f2fc9e71e971eced507b42fd",
+                    "pubKey": {
+                        "ed25519": "a3502e5f79a9b874ece86cf806853c47d263d3ccfbfe327ac95568a9cd951490"
+                    },
+                    "votingPower": {
+                        "low": 3000326,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -57428434,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "1b002b6ebeb8653c721301b1b56472b1b4de7247",
+                    "pubKey": {
+                        "ed25519": "81a971e0937b15b8c5dac7312a3d2eee1d69c0d43f3723eef7aae121eae60bab"
+                    },
+                    "votingPower": {
+                        "low": 2997871,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -31749698,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "8e0545b1222e7b5c85ce69edc78f280cb2b79d18",
+                    "pubKey": {
+                        "ed25519": "bd8353656c4a85edd49fa805faa5fa715077a3f286e18c4c0b8fc88114cad33e"
+                    },
+                    "votingPower": {
+                        "low": 2844966,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 66747629,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "04c83aa20f7563bbcbcf6aa150ef6b0c81808daa",
+                    "pubKey": {
+                        "ed25519": "f791cc0d6e74d3ab2c879d0d3bad6a4978fde19a915c67b54daefcab2eeee99d"
+                    },
+                    "votingPower": {
+                        "low": 2692195,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 42086453,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "d24b7a32413338c2aa26fc0016d91fbe73bb5eae",
+                    "pubKey": {
+                        "ed25519": "a7bbec0268402a52a3ecc398131e47b74374c06b9ad0e9f7e56cd6eeadde161e"
+                    },
+                    "votingPower": {
+                        "low": 2598596,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -79588133,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "a06b5b682b425ad206a35caf246fd70dd098e506",
+                    "pubKey": {
+                        "ed25519": "d34546b9914079e9e7fd97fcad8a8da30c949d3ccfa37cdcbbf2caa6d1889c75"
+                    },
+                    "votingPower": {
+                        "low": 2292963,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -1657610,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "e191e654d06b9f721568bb945b2eb51ddc1c8fdc",
+                    "pubKey": {
+                        "ed25519": "4888a709fe062a6baa1b5bb4d44642cbe3cd63f7fef2c4233f0ca71b66a4920f"
+                    },
+                    "votingPower": {
+                        "low": 2233628,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 110722678,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "7ef244868c304aa5b34889372e2df874afd635cd",
+                    "pubKey": {
+                        "ed25519": "02647063f76a3d20570d8fd83bf86e3e89222279ec5e6d21fb0338391c108af6"
+                    },
+                    "votingPower": {
+                        "low": 2168505,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 83465644,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "a16e480524d636b2da2ad18483327c2e10a5e8a0",
+                    "pubKey": {
+                        "ed25519": "61dd91607c82d08dc6df864c95de6bb3de1ee12e4bd539d66810da0c8861a528"
+                    },
+                    "votingPower": {
+                        "low": 2081282,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -92868557,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "76f706ae73a8251652bc72cb801e4294e2135afb",
+                    "pubKey": {
+                        "ed25519": "bcdc9ae9179e22c81347787b70dab4b83c085fd65c9f84b1fd9005416f684bb5"
+                    },
+                    "votingPower": {
+                        "low": 1962412,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 84357615,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "f194dd4a8ad83323c3e9c2a93db25f049621c7b4",
+                    "pubKey": {
+                        "ed25519": "a1ba22dfd695c326a9db618d1273bfc55dfd2afbfefe78d894acea5c31d0feee"
+                    },
+                    "votingPower": {
+                        "low": 1907771,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 79558630,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "3e88e7c54f64642a98b2e1ddd5bdba48794f06c7",
+                    "pubKey": {
+                        "ed25519": "7ae26e6ddc29d163635fdc4f55161c31a04f7743423fd98a28c71456d3e1a909"
+                    },
+                    "votingPower": {
+                        "low": 1904168,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 36725575,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "b0b35fed40daa5ff9d4bc685c75925187f622119",
+                    "pubKey": {
+                        "ed25519": "c3f71800b9f35141df3f4123fcdd0671693c2a5eaae7e0a722ac5bad7e00daf9"
+                    },
+                    "votingPower": {
+                        "low": 1716387,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -15501906,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "8b1d5676f4c0c871a0c7864850d451d6a8ac8e3b",
+                    "pubKey": {
+                        "ed25519": "b6a687464d7092ea873237cdea40d2d72994e556430b55cb98534521192da37a"
+                    },
+                    "votingPower": {
+                        "low": 1584313,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 20940910,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "f3f55da24bb47da60b0fb71ec1a9c9274bceedb2",
+                    "pubKey": {
+                        "ed25519": "8e371214d150f2afadff11ebd6e61d236fdcd6c3f0003d7bb8a83e0323964dee"
+                    },
+                    "votingPower": {
+                        "low": 1556982,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -85826823,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "20efe186da91a00ac7f042cd6cb6a1e882c583c7",
+                    "pubKey": {
+                        "ed25519": "fc99fa517d1055654eaae120e51594c4c91447c43d751c9cee0926bfdd830494"
+                    },
+                    "votingPower": {
+                        "low": 1554898,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -43337599,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "d8a6c54c54a236d4843ba566520ba03f60f09e35",
+                    "pubKey": {
+                        "ed25519": "f1846413861dac13d754af618222d829bae09cd51826c1867dcf0a77fb4e5aea"
+                    },
+                    "votingPower": {
+                        "low": 1549995,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -16247831,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "943547cacb29c55797e121acb4e586c49d9d39fd",
+                    "pubKey": {
+                        "ed25519": "f9629f36e6e8a02a4474913dddafa428c7e7fd88c9862f4307969964d4bd769e"
+                    },
+                    "votingPower": {
+                        "low": 1508000,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -5607590,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "cccac70767c9cd792ee0a0d09f77b9422b8afdfd",
+                    "pubKey": {
+                        "ed25519": "09807d00d0225127c471a1c4f20e0eccc36baa956d5967897ab943dbd8dc8fd3"
+                    },
+                    "votingPower": {
+                        "low": 1490349,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -93723345,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "69d0605229c665974ebb736fc77e16245c3f79aa",
+                    "pubKey": {
+                        "ed25519": "fae63b08b0b55a3d7afda479d2fc372dc25bc08976fc5ff3a2b6d42212aa2bf1"
+                    },
+                    "votingPower": {
+                        "low": 1415314,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 61981835,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "9cbf2effd5570b3a9a41346244757cda3e18d401",
+                    "pubKey": {
+                        "ed25519": "3f04eb31298aba5da5f317cddd1980af2c95bf6f8fbf01bd5e96717f855ce2e3"
+                    },
+                    "votingPower": {
+                        "low": 1336829,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 5124429,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "c02f531d9bbba4907511ef2680421ce714a11e3b",
+                    "pubKey": {
+                        "ed25519": "23db1f4a9b6c7e7c0438863c7d14f719ecc088eb3b1fc8a7fe607496447fac4e"
+                    },
+                    "votingPower": {
+                        "low": 1247576,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -16718054,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "7edb006522610c58283e30644a14f27bcc0d32ed",
+                    "pubKey": {
+                        "ed25519": "cf3656640a5109a097d58233650031707479257fabff3589bff9d3ee67a4e2dd"
+                    },
+                    "votingPower": {
+                        "low": 1167551,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 99506331,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "3ff6c988799c1adf3aca0da56143c8163890859a",
+                    "pubKey": {
+                        "ed25519": "9776967a589fe2a4b09f1777f0f731bce07d17ca28778a01231c108dc29bfe88"
+                    },
+                    "votingPower": {
+                        "low": 1056714,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -78066702,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "04446da0bcc4310003f97b1bed07ab2abec6fea7",
+                    "pubKey": {
+                        "ed25519": "30a3d1f6e481631b82b300484ea1aed0c503c7f3417763ca3e43b266a65309b1"
+                    },
+                    "votingPower": {
+                        "low": 1054461,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -21692918,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "712bc891aeb721da72732bc30d531e0c1eaedae0",
+                    "pubKey": {
+                        "ed25519": "a24b638d97169fb79d8f1d786e558eed5d668610a482f05e817cd7583f6cf5a0"
+                    },
+                    "votingPower": {
+                        "low": 1046822,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 72009233,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "e5cba199e045e7036711d814e57e2b66c3cc0391",
+                    "pubKey": {
+                        "ed25519": "53d278baae62eb328a1e445e50ab0c7ad252bf208dac26aa2c80b2228a97504c"
+                    },
+                    "votingPower": {
+                        "low": 1039512,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 73373026,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "e12cef3871b9595ef15401eed2466e9310e4816b",
+                    "pubKey": {
+                        "ed25519": "0b79d897e14b01d6e44e4aef3fc3a181dc94407e03a480f9a53dbba128fc5e5a"
+                    },
+                    "votingPower": {
+                        "low": 1030003,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 39993873,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "72b1489efb57a680577a838a5baaebe162a7c802",
+                    "pubKey": {
+                        "ed25519": "70d454aceb78239ac972c0158543a206f38b611485c7876ca36d9b714121b672"
+                    },
+                    "votingPower": {
+                        "low": 1021779,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 10758018,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "4e154c9288e31436ba814dd92d17c4ed6cefd3f1",
+                    "pubKey": {
+                        "ed25519": "7746dd5053e9a341e19629331c95112e8217bd489412f3b6f2ae089dc8cfcbd5"
+                    },
+                    "votingPower": {
+                        "low": 1018373,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -85706693,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "9cbec8cbd4ed3aad4bb2b0346efc86a6c41f9160",
+                    "pubKey": {
+                        "ed25519": "6fce05c68686e24f4829060da73a87d7a9c2037e73980ba6ae1b523c9bcc21c7"
+                    },
+                    "votingPower": {
+                        "low": 981861,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -42099165,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "5f999a4be254869925a7f2fea04d7b3b836cff0b",
+                    "pubKey": {
+                        "ed25519": "14fa59625697d678dc64d5d2f96d29026ddab8faa8390e9e7286587c45017795"
+                    },
+                    "votingPower": {
+                        "low": 976402,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -46075817,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "f470aeaf5d145c54da2e8b14c56478d6866ce2a6",
+                    "pubKey": {
+                        "ed25519": "8303b522a75ef63352131abe05cbcac638484666f22fc272e106e0986a87a501"
+                    },
+                    "votingPower": {
+                        "low": 974909,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -20383463,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "97afe45395b74e784c88d45e5cca2995019fae08",
+                    "pubKey": {
+                        "ed25519": "647d935af93b6ddf0c2e30c72c8b6f38952ff849607c8b493b85785e75de755c"
+                    },
+                    "votingPower": {
+                        "low": 933809,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 33474848,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "51d7d05a659208a6576190aebbe8f07603851515",
+                    "pubKey": {
+                        "ed25519": "62eb1eccaf40fe2bd5798425f403b4d31eda4b89c593111b8a7c191e1b2054f8"
+                    },
+                    "votingPower": {
+                        "low": 905025,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -16407363,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "5e809e91eab69d385784d191140e9c8cf6dd1037",
+                    "pubKey": {
+                        "ed25519": "2c20ade02052ae40ef4831d6301eef7a9619e2cc28ab5034acea6644ce3e63a7"
+                    },
+                    "votingPower": {
+                        "low": 844583,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -65416234,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "95b002de67707313d123d06492f1a7a58478e546",
+                    "pubKey": {
+                        "ed25519": "3c0f91bd2a554dc016043ffe9f15e5b472da39d694cdbae93467e331a93fbac5"
+                    },
+                    "votingPower": {
+                        "low": 839746,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 62580781,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "2335465b27b9548313aaf465217787fd8e6113d3",
+                    "pubKey": {
+                        "ed25519": "ad83cce6cc2dd83266285808eefd01cedffbc9421a51617e2ead21bbaa85fdf7"
+                    },
+                    "votingPower": {
+                        "low": 833645,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 5471236,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "966fd89b1db51535f2d898cf9b0f14da374efb96",
+                    "pubKey": {
+                        "ed25519": "465758a584028f6e80799abab47eae0b4c92a7dbcc62bc08b89a30c968956938"
+                    },
+                    "votingPower": {
+                        "low": 813574,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -81620046,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "18533edf3c5339570b80839636ede6be9d810e2b",
+                    "pubKey": {
+                        "ed25519": "496b9daf1c0bcaf41c9bfe993ec4e5ad053c6b9f9b6ee5f054c931c3fa4a1643"
+                    },
+                    "votingPower": {
+                        "low": 809828,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 16328202,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "ef4f7a6eac883b6e491e5466e6bec764c1fb99c3",
+                    "pubKey": {
+                        "ed25519": "f01b784cb6c316d27a95fc4fb127e59f7f7369a08471c9ee746c19a1c115eec0"
+                    },
+                    "votingPower": {
+                        "low": 797207,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 9018059,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "2c2467180bba84f2f1d4565e66f565a34003ee4f",
+                    "pubKey": {
+                        "ed25519": "b5decf8ce19ca9af58ae969e37cc7b83aefdf9397f8168a191124618bc241f5d"
+                    },
+                    "votingPower": {
+                        "low": 790728,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -63215878,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "000a5959634b4296e4de536481de00a8a0eb9a58",
+                    "pubKey": {
+                        "ed25519": "5d80af85d70e966ff983580748efbbfe102e090d2464f53b5cabdcd42e5ed54e"
+                    },
+                    "votingPower": {
+                        "low": 764930,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -93160836,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "63481f6dcaaf733d2fc953a335c2200ee190862c",
+                    "pubKey": {
+                        "ed25519": "6770347c291a291d3dbef0d3ef1d7c23621ccf1bd5a5ece4b0fa6c6322b59f66"
+                    },
+                    "votingPower": {
+                        "low": 756641,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 80042325,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "8445cf55cb51278e63b2131adb65a81dc2389d8e",
+                    "pubKey": {
+                        "ed25519": "f7925a8c92547bfe5d332151387406a5bc5b68ec008447d0dd2cbc3b934be667"
+                    },
+                    "votingPower": {
+                        "low": 711991,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 20544457,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "39327692c258a57970ef53f0aa4d3c00f95988b8",
+                    "pubKey": {
+                        "ed25519": "55983a8520d191a7846ac4fd06e62ffda350d744682cc7931307a2b7229536bf"
+                    },
+                    "votingPower": {
+                        "low": 709586,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -27035284,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "7341e970b9b3eff82b2060d3469fc50d7af04146",
+                    "pubKey": {
+                        "ed25519": "3bfb06eb87e63bdfeb9d17e425f0990cd9bb298de279133cbc25398427725335"
+                    },
+                    "votingPower": {
+                        "low": 704241,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -24074485,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "dbcd765db2640631946c1393ba255876c76da38e",
+                    "pubKey": {
+                        "ed25519": "50ddda931e0b3714fafaf5637f4d9dce461be673e9d976f5881f55062b311de8"
+                    },
+                    "votingPower": {
+                        "low": 701076,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 29898147,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "c02acba7653ac3782750b53d03a672e191f00361",
+                    "pubKey": {
+                        "ed25519": "1c6dea720e32a82ce5046e4da98b596912ad569e5629cc67113419af41932666"
+                    },
+                    "votingPower": {
+                        "low": 698563,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 86085237,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "68a393c7ed496871150c0a7cad0cac09b8e458fb",
+                    "pubKey": {
+                        "ed25519": "6d4d66dda0d0c31229a8562e6e3648852bd80a26b531049f4da697241837f27c"
+                    },
+                    "votingPower": {
+                        "low": 692817,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -55336972,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "99938495407c09b343562aaec3ab551a5c246232",
+                    "pubKey": {
+                        "ed25519": "12f31aeac3e9109433f1ba9a94630448ebc32aad986173e8f7e89bdeaabe9b3f"
+                    },
+                    "votingPower": {
+                        "low": 682427,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 67650888,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "692174b3ffbba80394a94dc92665dc0144fba837",
+                    "pubKey": {
+                        "ed25519": "fa27065157b26cd698738de23432f48af7269bdb7dfe25a2dbfd40738175adc5"
+                    },
+                    "votingPower": {
+                        "low": 611599,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 2177180,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "cefe7d654b523dea2a9ed718a591126c74171689",
+                    "pubKey": {
+                        "ed25519": "245043a3bb3f3655a7a08ea16f2e1acaab2d4b3b220fc4fa29a6f15530d9533d"
+                    },
+                    "votingPower": {
+                        "low": 607235,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -60914032,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "7364be6cc7b6e404bd1c2050ccb6a7472786e3b6",
+                    "pubKey": {
+                        "ed25519": "565ca17b5443d0c23d38435b6cddb28e64d3b552604986193a248d0be93426e5"
+                    },
+                    "votingPower": {
+                        "low": 511947,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 106640150,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "46dea137cfb10bc419b2577aa9a58718680e18ba",
+                    "pubKey": {
+                        "ed25519": "24c1759b31bc7e3d1ad204a5beaf6d3f56832fb6677135a5feaecba2ba32b51b"
+                    },
+                    "votingPower": {
+                        "low": 511724,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -63803689,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "f233e036248a36fc73c154ffa79261bcbdc4bb76",
+                    "pubKey": {
+                        "ed25519": "baa8697cae1a67c31a4c2f19c43e318607205c30a7928e1e77acc4773ee30deb"
+                    },
+                    "votingPower": {
+                        "low": 508785,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -84048358,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "7fc1da40b2568ddbd53cff3b76c49ce89ae28680",
+                    "pubKey": {
+                        "ed25519": "e5bd157cc917235604a2da99fc0bed4fc4cec2ea27efe46080a2f867a6f66d98"
+                    },
+                    "votingPower": {
+                        "low": 496771,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 26205850,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "a9c4e0e2af00183da11434ed413219905e9a868d",
+                    "pubKey": {
+                        "ed25519": "b579e685431c2326c86fd5b39b1e6d88b0f8c688c641ce62adb39c35bfd14e1a"
+                    },
+                    "votingPower": {
+                        "low": 495726,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -40945716,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "451acecaa7dc4cce6e0b7cde02f455df973535e5",
+                    "pubKey": {
+                        "ed25519": "dbaa8e762cbd93c2e05a4205eab0ceaa0b0597bcb4fea2e0367f8d43f4185658"
+                    },
+                    "votingPower": {
+                        "low": 492539,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 2934274,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "3ff719f1664bee93d482b480677c03a47ec0b643",
+                    "pubKey": {
+                        "ed25519": "809be43cb887a36fb5d89246a6b87056c0010125f35cefdd496b67934cb0341e"
+                    },
+                    "votingPower": {
+                        "low": 481545,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -65339143,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "7e0ed7689b65c345d1c817c5b0332fd132de5875",
+                    "pubKey": {
+                        "ed25519": "45f10c8fe0408a0f3e6088f0225aae19603b5513b508c7e2827e8fb7011cb7a9"
+                    },
+                    "votingPower": {
+                        "low": 471820,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -33685807,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "e06dadeb413829558f7c95339ffb61499c5a1bb9",
+                    "pubKey": {
+                        "ed25519": "777a8d93635ce43cdaa5144f349fff7636fa509f1c465251b58c5ee3c4255be8"
+                    },
+                    "votingPower": {
+                        "low": 468234,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 113078070,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "8f4157e8013f550b0e7f83bbe0ab8559bae1209f",
+                    "pubKey": {
+                        "ed25519": "d9db96b04efe2d5536eb8998ff065eaa7edc281e1f2837bc7b4d113695ecc53a"
+                    },
+                    "votingPower": {
+                        "low": 461682,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -97923719,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "893abecbd53b78dfd48027f410b64558714188b1",
+                    "pubKey": {
+                        "ed25519": "ab8b0f4c265774d09409b5e8b34cb8f9484b67a698c6c519214e6b2af2ee8674"
+                    },
+                    "votingPower": {
+                        "low": 453456,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -14090391,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "0ceb917de4df1c4b4f8edfc4ace6fd6d39f1e61e",
+                    "pubKey": {
+                        "ed25519": "d578e01a2bf304f866055801d4e205a67ef30abc1c4d869e9b2bbc83194124d0"
+                    },
+                    "votingPower": {
+                        "low": 451933,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -71084782,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "0614088c41e6a85fb5bf344552a5120e5a0139fc",
+                    "pubKey": {
+                        "ed25519": "c30b1b43a9a4130799b766613da9e741aa7f1629b5b03be218e750a5ad20c80f"
+                    },
+                    "votingPower": {
+                        "low": 423964,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -1080323,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "7d53d76f2db86be30a9b26cadea69078531ab9bb",
+                    "pubKey": {
+                        "ed25519": "42e7a3b3d0df9c2b201849535f150bb25014d3a7386f3cabc43493b4367a54ef"
+                    },
+                    "votingPower": {
+                        "low": 408956,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 95219263,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "901fd122cc512ef13de8e1a3d7953bfddc0786d6",
+                    "pubKey": {
+                        "ed25519": "5e022ed655f7d7c2d227296ba022f3463025889a0e23e9f27bbaf7bc6f12ec57"
+                    },
+                    "votingPower": {
+                        "low": 393627,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 7858123,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "dd069a6901d749387a3aee9846ff8e12705b46a0",
+                    "pubKey": {
+                        "ed25519": "782ad1777639f8dd409fa2c75bf7116938e2f73b2a14dc7437ac4423236b662a"
+                    },
+                    "votingPower": {
+                        "low": 392290,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -99487929,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "9cd6a19a290a2fc852fed54a7510f4d584b2f8f0",
+                    "pubKey": {
+                        "ed25519": "af307d2a85d27642dacfcc3775546b1edcfd279023bfcb260d0652e89bab4dfb"
+                    },
+                    "votingPower": {
+                        "low": 390193,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -40581485,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "3c80d989109075312dcfa3d8a970df58e5b55c5b",
+                    "pubKey": {
+                        "ed25519": "7145648273a364235f891dfecc3dcd0276f04bc1f30ce737744797afcef9a154"
+                    },
+                    "votingPower": {
+                        "low": 384373,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 83533942,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "9496535a8f2945bdb60572015d2d6f721ab6fed9",
+                    "pubKey": {
+                        "ed25519": "78078050a9cfbc6c5bea1110e15c7354efba656bf2aa7d4e8edcc18eacc12b14"
+                    },
+                    "votingPower": {
+                        "low": 364650,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -70674949,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "2f4d6730476407195af3c1bf438b61cb6d785b95",
+                    "pubKey": {
+                        "ed25519": "e2a11a813942eee242ef0f38cef8abeed9e52b3df400bd03309dead2f9a8cd28"
+                    },
+                    "votingPower": {
+                        "low": 362085,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 82455821,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "972a684f364cce31469b37a9d439985115eb5a40",
+                    "pubKey": {
+                        "ed25519": "03f3653f1603cc8ddc80d66497c5526075c17bdd010afd6682a7795fcf1e618d"
+                    },
+                    "votingPower": {
+                        "low": 354241,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 22581308,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "3749086b6d85bde3dacfbe4485e3df95e709b6db",
+                    "pubKey": {
+                        "ed25519": "d7ffe9e33ffdc09bfaeaaf5705975f02b762437f26e0bd871687ecdbdac6e3f1"
+                    },
+                    "votingPower": {
+                        "low": 354118,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 36427326,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "e242db2cb929d6f44a1a2fe485cc7d3f620ffaeb",
+                    "pubKey": {
+                        "ed25519": "b393d2e4dfe27218cec720e8c11a30823a990a113743fa84c1e4c82b74a7fd7e"
+                    },
+                    "votingPower": {
+                        "low": 342158,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -21876656,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "4146fd7a1ab8b861b7018978bcd13d2d1fa63ebe",
+                    "pubKey": {
+                        "ed25519": "aeab33dcf6b9fc06e90ae40425497f9a1ea8cf607f99b92724ec5d5537809143"
+                    },
+                    "votingPower": {
+                        "low": 340012,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -6646167,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "da4af19a378c09b54c26c3467cb0adf889292954",
+                    "pubKey": {
+                        "ed25519": "74e936a54cd5647abc24377234b3b21c7f64fabcbf5efc65eddfef662bd81342"
+                    },
+                    "votingPower": {
+                        "low": 335418,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 23789780,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "636cd7ff47ba87abaf2bd4032601d29dfb49fa65",
+                    "pubKey": {
+                        "ed25519": "2eed7bef19e3756b61bd5c4768930736144f0a3fb277c71dc3d0d4fa63cc8af9"
+                    },
+                    "votingPower": {
+                        "low": 315520,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 41502139,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "20658bf40ed48ed01a2d087c7ff7874f21a56333",
+                    "pubKey": {
+                        "ed25519": "71ff973e6020b5734afc1e06bb3bc4a49761c1a145a357e7ebd28f85a3d740e5"
+                    },
+                    "votingPower": {
+                        "low": 306518,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -45967160,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "e23afcf0035fb01acd02fe96f680066974d7072b",
+                    "pubKey": {
+                        "ed25519": "d601d0fa5338d6bcd586ac6fc0afe096d20c748880d8aceb2aeed126b639afb4"
+                    },
+                    "votingPower": {
+                        "low": 289442,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -14719393,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "a572fc790edb3653f0a82dcc92c865975ca4925d",
+                    "pubKey": {
+                        "ed25519": "98cf4d9fd5e1d240cec9b4841155f2a7237a37e771777c2245ef414b90575393"
+                    },
+                    "votingPower": {
+                        "low": 284305,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 110815950,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "15fec10416e359cc1ddb424c69166b2671f25148",
+                    "pubKey": {
+                        "ed25519": "3a324933e9423e8e7c94d5838040ea684e8a9aa2045c68f89a7d41fdf0259947"
+                    },
+                    "votingPower": {
+                        "low": 283367,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -5832517,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "8014ba212ed388597510d064258f5e30aa30d591",
+                    "pubKey": {
+                        "ed25519": "c4fd38b1d83bc7066a3e93986a84c88ce8428108d72b969d8208502e990fe8c3"
+                    },
+                    "votingPower": {
+                        "low": 283188,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -47568850,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "7c5aa87e5203c66ea35c64262f576edd29bad980",
+                    "pubKey": {
+                        "ed25519": "63303ccb21d2bf29aa0a996b874af9d13d4346194db1c9b12b7f10e13d14e282"
+                    },
+                    "votingPower": {
+                        "low": 281361,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -68249064,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "2dd6d22969ee7c2ca1f8b428d13a8995c043044c",
+                    "pubKey": {
+                        "ed25519": "70cd875336aed8bdc3db4eb72ca2396069877216bbf6ee6f990156c8aa3703fe"
+                    },
+                    "votingPower": {
+                        "low": 281236,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -33381862,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "de0f93b59dfa0b0f0245ee7afab3a37709cfb35f",
+                    "pubKey": {
+                        "ed25519": "ffaf828672f8976f192269cc9f309c8d31d7cec96356d059775fe0dd5120a9c3"
+                    },
+                    "votingPower": {
+                        "low": 276772,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -45334033,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "41b543e91479a95cd5ca9f109c26dfac149126fa",
+                    "pubKey": {
+                        "ed25519": "0bcf2ea5bb5ee3af29e959d4631152b55ba0695f85ce2e82dd87242b8970a602"
+                    },
+                    "votingPower": {
+                        "low": 271958,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 27072354,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "ae82eef2880efd8f507c9b0e3efbfa8c1ac3991a",
+                    "pubKey": {
+                        "ed25519": "cdfed5cb41a4f80ae21099b705c44412f4dcf1e78672e4adcc3b9117726af4db"
+                    },
+                    "votingPower": {
+                        "low": 271050,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 74663363,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "c9e615289d1d92e50292c3b0bd8358d9b2e40290",
+                    "pubKey": {
+                        "ed25519": "816b7aabef362d1da73161e8ee4daae4b18bb17cee6466a3650545caa933ca06"
+                    },
+                    "votingPower": {
+                        "low": 256491,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -41500729,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "60a433d28b08788c72e2133554bd5cc68769dcec",
+                    "pubKey": {
+                        "ed25519": "1e8df872a211c43bb6f22a1ceb8fd5b8879b7ca792de6723bf3065fa6c4266f1"
+                    },
+                    "votingPower": {
+                        "low": 250945,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -35504171,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "6a0dbe5d0b92e571465af52e2b77665838c2e51c",
+                    "pubKey": {
+                        "ed25519": "07e83ea6db825e466bdb486d1affd18834049ea5e2dbc523c28d8315471e372b"
+                    },
+                    "votingPower": {
+                        "low": 250818,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -39274151,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "9f8ec2ef581ce25630c819f19b5484039e748d1a",
+                    "pubKey": {
+                        "ed25519": "7768735ffdf0ae68edadbfa300a514bcef7955e7a3751a314c775063bffc80ba"
+                    },
+                    "votingPower": {
+                        "low": 246127,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -31899264,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "191e896a11c0a77a96a99abee986a2a40355c044",
+                    "pubKey": {
+                        "ed25519": "8c6dd838fccbc443a67c2db137cab1aad17e0352062ef9f5f40853be14a6a2bf"
+                    },
+                    "votingPower": {
+                        "low": 245883,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -22646272,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "f9a968a405fb0429410ae5165e5f2193271e678a",
+                    "pubKey": {
+                        "ed25519": "c168ae411e8262ad92df5a20beb0eb603f2223757572120b27ac627be26b449f"
+                    },
+                    "votingPower": {
+                        "low": 231606,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 96766774,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "f6783d8fb30e283081c16398293f482dca0e912d",
+                    "pubKey": {
+                        "ed25519": "d9cb95a9421bcb4e7bc59f2776fa2c0a4ddfba8bf30682462ccc81ef826c64d8"
+                    },
+                    "votingPower": {
+                        "low": 221462,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -37520446,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "2f89d7d3d1e1478f88ef3ad8aad76a88189f6124",
+                    "pubKey": {
+                        "ed25519": "9c20fbc290606879b909332fb16ae8e16f4e0e6bf3bcbce9858a08026496e51f"
+                    },
+                    "votingPower": {
+                        "low": 220619,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -41969144,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "e20004515311b205618fad504fb529a3deee2e71",
+                    "pubKey": {
+                        "ed25519": "a26c465c7f397649867ac4391b0432d18299eaabe6fbfd9ef1fc686a194aa2b4"
+                    },
+                    "votingPower": {
+                        "low": 219013,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 107284055,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "1571038b5aaab431ec011f6ab1094463c6ed9842",
+                    "pubKey": {
+                        "ed25519": "f03f305e4319f5dfe9f3ab0ec48cecfd4bf730c6327abd40323e949ce29d716d"
+                    },
+                    "votingPower": {
+                        "low": 218064,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 32465995,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "9127dfa61750dd1d56cb1d2a88f8831a2b3f9b0e",
+                    "pubKey": {
+                        "ed25519": "22b43613ebabee0c6193beff81ac47c43d033f2211596d36220ba8e7b1ffdd9c"
+                    },
+                    "votingPower": {
+                        "low": 216872,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -61206182,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "0960ef3fd58fe7dbb8f20fc98269d3b840451603",
+                    "pubKey": {
+                        "ed25519": "8d2347a90879bb7d57e53a89d5d29574581e1458a1aa33fe0f552dbe8e657b38"
+                    },
+                    "votingPower": {
+                        "low": 214094,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -74233093,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "dd5751613fd7d31a952353014bd39ff5609ce2af",
+                    "pubKey": {
+                        "ed25519": "b2170f9a30df9d0e285f1acd32ed6bc9af3a69f588e82e464965fd46d2e1a22e"
+                    },
+                    "votingPower": {
+                        "low": 211720,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 61366461,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "4e2f0e49e1a479b2a213a841e5e8a1f3bc76b3f7",
+                    "pubKey": {
+                        "ed25519": "1554dcc5079042ce027b112648b564305af1a5848abfbb68eeb39d970fbb7a3d"
+                    },
+                    "votingPower": {
+                        "low": 210373,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -4765465,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "c5ed122e511ff9d7dea986fd7423c61aeb139d34",
+                    "pubKey": {
+                        "ed25519": "e46d6c3bbb10120804a4d4cea154c6023904ebb5b998bef0d3ebb9f65793776b"
+                    },
+                    "votingPower": {
+                        "low": 205086,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -77600886,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "e80d1f5519a5b3c9d290d3ea314fa05564535c1a",
+                    "pubKey": {
+                        "ed25519": "6c39d4c79d4e0a531a063b729c4dd12e609bd2694f9646962d5643066ac2d547"
+                    },
+                    "votingPower": {
+                        "low": 204040,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -11024687,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "508fb7cddd02eb98a9d16c2bd3f9e63060e36f6b",
+                    "pubKey": {
+                        "ed25519": "c98cb91df2c66a0d287da32999fd01deb31cd2c7ab317f0c0e5ea1fb894f93b9"
+                    },
+                    "votingPower": {
+                        "low": 202684,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -45469732,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "0c55c18d9c6689b8cd6f775dd7ec46331ff662e2",
+                    "pubKey": {
+                        "ed25519": "7f90f3121b506e799713f59942c5fe23c4658cf744534bb49dc546b67885c843"
+                    },
+                    "votingPower": {
+                        "low": 196076,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 87108585,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "22ba59ac2918afa4c1b56d3e6f86083e470cd8cb",
+                    "pubKey": {
+                        "ed25519": "6f60d53412eb2055e4435f565e66f39542a1fac42b05a498d6cf2148f90514c6"
+                    },
+                    "votingPower": {
+                        "low": 194782,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -53993274,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "bd4f80f0c1a67b4950772662f6ebcad58a258933",
+                    "pubKey": {
+                        "ed25519": "4313e1cd7143fe17815536a4f3499bde0d1c00de1fa3788801f1a1cd6dcab64b"
+                    },
+                    "votingPower": {
+                        "low": 194063,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 90722170,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "06aa34bd6d1dd34119e3dc173efad94f430ab74e",
+                    "pubKey": {
+                        "ed25519": "b95650373a6194c59e18456f4a26cab57f4d3c277669caafa530b6c5023b4dcf"
+                    },
+                    "votingPower": {
+                        "low": 186718,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -63507011,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "800ff47897d19dcdf7e20cf308c993e304e6ea93",
+                    "pubKey": {
+                        "ed25519": "e2473d397410886c8d4535e5ac2c65b6bce058b529579d3827846143960ba4c5"
+                    },
+                    "votingPower": {
+                        "low": 181626,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 35974311,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "8d8cb9c26740ba74a2aa0abf9d2baf98226485a6",
+                    "pubKey": {
+                        "ed25519": "b91503cd07793ceae7ffe3d4ba34f1d02bf03bab19c6bc3430810972014608d5"
+                    },
+                    "votingPower": {
+                        "low": 178089,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -51390544,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "ca0f2a7121f86d3b6d91349730155b9a5a31c554",
+                    "pubKey": {
+                        "ed25519": "40b4e0084232d339f67f9d7d4fa307bda88af7ee76b104e3cec9d3c39f75e9d1"
+                    },
+                    "votingPower": {
+                        "low": 177255,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 9863169,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "90edc9821da803a87339cf4ab67501b1d1217451",
+                    "pubKey": {
+                        "ed25519": "a710d24d19f05adbe248889c303f0683ab9b119554be09da501f12497a3a76bf"
+                    },
+                    "votingPower": {
+                        "low": 170419,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 61408664,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "7e11ed7dd06fae7b0bedb469721151f2f31cbb6a",
+                    "pubKey": {
+                        "ed25519": "4c769c063525f04c7d63616b94a32b8f9a196e8abfb15a5358cb5a9b05169684"
+                    },
+                    "votingPower": {
+                        "low": 160213,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 14561189,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "46e5338ef19a939d3d3b0b0b78a1c665f0fa19e8",
+                    "pubKey": {
+                        "ed25519": "2b43fc7d665c6a37b2f6f6897d73c0d146097b306c792f3e094a563cca86c754"
+                    },
+                    "votingPower": {
+                        "low": 157241,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 44469273,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "c9b753ed297e5f9894d4a43149cfc9f7b207b6b2",
+                    "pubKey": {
+                        "ed25519": "404a57c540daba7bf6c269da435430d33612ff31c239adf02482264889e18dac"
+                    },
+                    "votingPower": {
+                        "low": 146977,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -49257523,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "0c562eaf824739ac8f999c93b5a01be7d58a66b1",
+                    "pubKey": {
+                        "ed25519": "e696f01bd547cdc768ad8049a578c704ac6bbc402c7289a995d7b42754a5d025"
+                    },
+                    "votingPower": {
+                        "low": 128197,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -83570970,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "b15069e41b1a60ff03ae8d8f741f78c7b1144fbe",
+                    "pubKey": {
+                        "ed25519": "58ac62882707e85b1e71847be0e73ea357f5e19dbfeeafa4cc9b83dbdc512ea9"
+                    },
+                    "votingPower": {
+                        "low": 119538,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 73643569,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "6fa5689f36cc9ad136b8c9f846fccff57345ddfb",
+                    "pubKey": {
+                        "ed25519": "b4d6d9b774642a02d40c59a0fffe3098ab4536c1ab569eda8daa34a1840e0a7e"
+                    },
+                    "votingPower": {
+                        "low": 102795,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 74845004,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "96d23d35245cb35a5fae81198b64bf08d2436d94",
+                    "pubKey": {
+                        "ed25519": "bde37728356108180cbb263443efc8eada3b17bdb21dc8000661a1b491ca6308"
+                    },
+                    "votingPower": {
+                        "low": 91218,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -69861389,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "8f4d7e389bf335b74839d99ba7c00efdbae5d659",
+                    "pubKey": {
+                        "ed25519": "0b27f0b91f5ecc31b5777a72fd4197595254f8ea30146d67612a68437379b4d3"
+                    },
+                    "votingPower": {
+                        "low": 83591,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -51060547,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "5f85b3f808e28491eb219bb0345668ca2d620618",
+                    "pubKey": {
+                        "ed25519": "4e36200c8d9cd9657508b39d25d9029746a8fbabcae1d38de989e9029eb831ec"
+                    },
+                    "votingPower": {
+                        "low": 80172,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -16168815,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "e9ea7927f9988ac06d06040d7d75bed4fb05ace5",
+                    "pubKey": {
+                        "ed25519": "7652daba1f11d6325918d171e6d682228c61f32e2be2931e5b82be31554ce4f9"
+                    },
+                    "votingPower": {
+                        "low": 77185,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 78010680,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "9f5bc08868df50484f24520cb87d75d43f6dc23b",
+                    "pubKey": {
+                        "ed25519": "3e3005668dbe92f9dd715946cc021440c628b6ea26e2152f694382f424ac4769"
+                    },
+                    "votingPower": {
+                        "low": 76286,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 35213139,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "40c48839cd487d8a13d65955b7fc6c4f560d8f72",
+                    "pubKey": {
+                        "ed25519": "bba89921518cd62976f9e6a2b21b8233580e8c930994cea63cbe6dad65ac6daa"
+                    },
+                    "votingPower": {
+                        "low": 76120,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 94649539,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "1fada14dee843b733ecd5de2e74552ad234a5451",
+                    "pubKey": {
+                        "ed25519": "4d83d58408b8fb9eed8d39cdc23b4aaee403651eb39d86d28d282c274520b117"
+                    },
+                    "votingPower": {
+                        "low": 75339,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 77752954,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "ddff1b21f85eb0a3300360e3a3380ce32dfe5484",
+                    "pubKey": {
+                        "ed25519": "35274afb1a0ede81e5a0b576e6bff216944d59fa5f8c7eca66e63e918e4c7817"
+                    },
+                    "votingPower": {
+                        "low": 66593,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": 14751559,
+                        "high": 0,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "0b97b2bd62680b733c9fb7a4a309bbd40f3e770f",
+                    "pubKey": {
+                        "ed25519": "e70a91730700d2ed428e8afecb000bf400bd4230f7bc33f9a4cf695198552b6e"
+                    },
+                    "votingPower": {
+                        "low": 64041,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -42085514,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                },
+                {
+                    "address": "2bc2a0c3abaf936778030c004585b4750a862c1d",
+                    "pubKey": {
+                        "ed25519": "ca7210f4e91280dbc65ea303846b7edb48b63a5cebe4f43df4081b050006d575"
+                    },
+                    "votingPower": {
+                        "low": 59349,
+                        "high": 0,
+                        "unsigned": false
+                    },
+                    "proposerPriority": {
+                        "low": -50898369,
+                        "high": -1,
+                        "unsigned": false
+                    }
+                }
+            ],
+            "proposer": {
+                "address": "138fd9ab7abe0baed14ca7d41d885b78052a4aa1",
+                "pubKey": {
+                    "ed25519": "9a66109b69c09eb50a2b928dcb7d45095f6504c97dfca81195ae2f06c87f2570"
+                },
+                "votingPower": {
+                    "low": 3423536,
+                    "high": 0,
+                    "unsigned": false
+                },
+                "proposerPriority": {
+                    "low": -92269945,
+                    "high": -1,
+                    "unsigned": false
+                }
+            },
+            "totalVotingPower": {
+                "low": 0,
+                "high": 0,
+                "unsigned": false
+            }
+        }
+    ],
+    "lastHeightChanged": {
+        "low": 6798675,
+        "high": 0,
+        "unsigned": false
+    }
+}

@@ -8,6 +8,7 @@ import {
   toHex,
 } from "@cosmjs/encoding/build/index.js";
 import { cosmos, osmosis, ibc, cosmwasm } from "osmojs";
+import CryptoJS from "crypto-js";
 import * as osmojs from "osmojs";
 
 export const fromHexString = fromHex;
@@ -15,7 +16,11 @@ export const toHexString = toHex;
 
 function txData(data) {
   if (Object.prototype.toString.call(data).includes("Uint8Array")) {
+    let hash = CryptoJS.SHA256(CryptoJS.lib.WordArray.create(data)).toString();
+    // console.log("check_txHash", hash);
+
     const decodeTx = cosmos.tx.v1beta1.Tx.decode(data);
+    decodeTx.body.txHash = hash;
     return parsingJSONuint8ToHex(decodeTx);
   } else {
     return Object.fromEntries(
@@ -126,13 +131,12 @@ function decodingAccountData(data, typeUrl) {
 }
 
 function txsData(data) {
-  return Object.fromEntries(
-    Object.entries(data).map((item) => {
-      let [key, value] = item;
-      item[1] = txData(value);
-      return item;
-    })
-  );
+  try {
+    return data.map((item) => txData(item));
+  } catch (error) {
+    console.log("decodeTxs error: ", error);
+    return parsingJSONuint8ToHex(data);
+  }
 }
 
 function accountData(data) {
@@ -200,6 +204,8 @@ export const parsingJSONuint8ToHex = (data) => {
             ) {
               // console.log("check 2: ", key);
               if (key === "txs") {
+                // console.log("txs", value);
+
                 item[1] = txsData(value);
               } else if (key === "tx") {
                 item[1] = txData(value);
@@ -208,7 +214,7 @@ export const parsingJSONuint8ToHex = (data) => {
               } else if (key === "messages") {
                 item[1] = decodeMsgs(value);
               } else if (key === "header") {
-                console.log("check", key, value);
+                // console.log("check", key, value);
                 if (typeof value === "object" && value?.typeUrl) {
                   item[1] = decodeMsg(value);
                 } else {
