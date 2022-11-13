@@ -2,6 +2,7 @@ import * as _m0 from "protobufjs/minimal";
 const _helpers = require("@osmonauts/helpers");
 const _validator = require("osmojs/main/proto/tendermint/types/validator");
 const _abci = require("osmojs/main/proto/tendermint/abci/types");
+const _params = require("osmojs/main/proto/tendermint/types/params");
 
 /** 
 // 참고
@@ -80,11 +81,10 @@ var ABCIResponses = {
     var reader = input instanceof _m0.Reader ? input : new _m0.Reader(input);
     var end = length === undefined ? reader.len : reader.pos + length;
     var message = createBaseABCIResponses();
-    console.log("check", input);
-    console.log("length", length);
+
     while (reader.pos < end) {
       var tag = reader.uint32();
-      console.log("tag", tag);
+
       switch (tag >>> 3) {
         case 1:
           message.deliverTxs.push(
@@ -116,3 +116,53 @@ var ABCIResponses = {
 };
 
 exports.ABCIResponses = ABCIResponses;
+
+// ConsensusParamsInfo represents the latest consensus params, or the last height it changed
+// message ConsensusParamsInfo {
+//   tendermint.types.ConsensusParams consensus_params    = 1 [(gogoproto.nullable) = false];
+//   int64                            last_height_changed = 2;
+// }
+
+function createBaseConsensusParamsInfo() {
+  return {
+    consensusParams: {
+      block: undefined,
+      evidence: undefined,
+      validator: undefined,
+      version: undefined,
+    },
+    lastHeightChanged: _helpers.Long.ZERO,
+  };
+}
+
+var ConsensusParamsInfo = {
+  decode: function decode(input, length) {
+    var reader = input instanceof _m0.Reader ? input : new _m0.Reader(input);
+    var end = length === undefined ? reader.len : reader.pos + length;
+    var message = createBaseConsensusParamsInfo();
+
+    while (reader.pos < end) {
+      var tag = reader.uint32();
+
+      switch (tag >>> 3) {
+        case 1:
+          message.consensusParams = _params.ConsensusParams.decode(
+            reader,
+            reader.uint32()
+          );
+          break;
+
+        case 2:
+          message.lastHeightChanged = reader.int64();
+          break;
+
+        default:
+          reader.skipType(tag & 7);
+          break;
+      }
+    }
+    return message;
+  },
+};
+
+exports.ConsensusParamsInfo = ConsensusParamsInfo;

@@ -9,8 +9,12 @@ import {
 } from "@cosmjs/stargate";
 import Long from "long";
 import express from "express";
-import { validatorDB, abciResponseDB } from "./test_file";
-import { ValidatorsInfo, ABCIResponses } from "./utils/tendermint_util/state";
+import { validatorDB, abciResponseDB, consensusParamsDB } from "./test_file";
+import {
+  ValidatorsInfo,
+  ABCIResponses,
+  ConsensusParamsInfo,
+} from "./utils/tendermint_util/state";
 import { parsingJSONuint8ToHex } from "./utils/convert";
 
 const OSMOS_RPC = "http://osmosis-mainnet-archive-node.allthatnode.com:26657/";
@@ -33,6 +37,12 @@ export const serverInit = async () => {
   app.get("/state/abci", async (req, res) => {
     const converter = ABCIResponses.decode;
     const check1 = new _m0.Reader(abciResponseDB);
+    res.json(parsingJSONuint8ToHex(converter(check1)));
+  });
+
+  app.get("/state/params", async (req, res) => {
+    const converter = ConsensusParamsInfo.decode;
+    const check1 = new _m0.Reader(consensusParamsDB);
     res.json(parsingJSONuint8ToHex(converter(check1)));
   });
 
