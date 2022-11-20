@@ -5,6 +5,8 @@
   "license": "MIT",
   "dependencies": {
     "@babel/runtime": "^7.18.9",
+    "@cosmjs/crypto": "^0.29.4",
+    "@cosmjs/encoding": "^0.29.4",
     "bech32-buffer": "^0.2.0",
     "express": "^4.18.1",
     "nodemon": "^2.0.20",
@@ -14,7 +16,7 @@
   "scripts": {
     "start": "node --exec babel-node server.js",
     "server": "babel-node server.js",
-    "test": "nodemon --exec babel-node test.js",
+    "test": "nodemon --exec babel-node utils/ethAddress_converter.js",
     "explorer": "nodemon --exec babel-node test_explorer.js",
     "make_acc": "nodemon --exec babel-node makeCosmosAccounts.js",
     "state": "nodemon --exec babel-node test-state.js"
